@@ -23,7 +23,7 @@ const EditNote = ({ note }) => {
 
     const updateNote = async () => {
         try {
-            const res = await fetch(`http://localhost:3000/api/notes/${router.query.id}`, {
+            const res = await fetch(`https://notes-app.valeryaleshka.vercel.app//api/notes/${router.query.id}`, {
                 method: 'PUT',
                 headers: {
                     "Accept": "application/json",
@@ -106,7 +106,7 @@ const EditNote = ({ note }) => {
 }
 
 EditNote.getInitialProps = async ({ query: { id } }) => {
-    const res = await fetch(`http://localhost:3000/api/notes/${id}`);
+    const res = await fetch(`https://notes-app.valeryaleshka.vercel.app//api/notes/${id}`);
     const { data } = await res.json();
 
     return { note: data }
