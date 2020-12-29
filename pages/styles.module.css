@@ -1,0 +1,26 @@
+.cardView{
+    text-align: center;
+}
+
+.viewButton{
+    margin-left: 10px;
+}
+
+.centered{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formWraper{   
+    margin: 30px;    
+}
+
+.header{
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+   
+}
